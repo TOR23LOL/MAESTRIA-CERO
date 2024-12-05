@@ -1,0 +1,134 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+    button{
+        height: 6vh;
+        width: auto;
+        background-color: black;
+        padding-inline: 5%;
+    }
+}
+
+body{
+    background-image: url(/assets/img/PROYECTO-TRABAJO.jpg);
+    background-position: start center;
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: gray;
+    gap: 100px
+}
+
+main{
+    flex-grow: 1;
+    margin-inline: 7%;
+    border: 2px groove rgb(161, 161, 161);
+    backdrop-filter: blur(30px);
+    padding: 5%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header{background-color: rgb(0, 0, 0); border-radius: 0 0 10% 10% / 0 0 5% 5%;}
+
+.sec-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2.5%;
+    border-bottom: 2px solid rgb(78, 78, 78);
+    border-radius: 0 0 10% 10% / 0 0 5% 5%;
+    gap: 30px;
+    
+    .img2{width: 55%;}
+
+    img{height: 40vh; width: auto; border: 2px groove rgb(195, 195, 195); border-radius: 10px;}
+}
+
+.flex-sec1, .flex-item-1, .flex-item-2{flex-grow: 1; display: flex;}
+
+.flex-sec1{
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+.flex-sec2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    gap: 40px;
+}
+
+.flex-item-1, .flex-item-2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button{border-radius: 25px;}
+}
+
+.btn-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button{border-radius: 25px;}
+    a{display: flex; align-items: center; text-decoration: none; color: white; gap: 10px;}
+    svg{height: 3vh; width: auto;}
+}
+
+.flex-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .video{
+        height: 90vh;
+        width: 75%;
+        border-radius: 25px;
+    }
+}
+
+main .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    button{background-color: none; border: none;}
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+}
+
+footer{
+    background-color: rgb(38, 38, 38);
+    border-top: 2px groove rgb(161, 161, 161);
+    backdrop-filter: blur(100px);
+    border-radius: 25px 25px 0 0;
+    padding: 3% 5% 3% 5%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    button{border-radius: 25px;}
+    a{text-decoration: none; color: white;}
+}
+
+.ocultar{
+    display: none;
+}

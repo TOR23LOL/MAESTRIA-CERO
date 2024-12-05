@@ -1,0 +1,56 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.body-index{
+    background-image: url(/assets/img/PROYECTO-TRABAJO.jpg);
+    background-position: start center;
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border: 2px groove rgb(161, 161, 161);
+    backdrop-filter: blur(100px);
+    flex-grow: 0;
+    padding: 10%;
+    border-radius: 25% / 12%;
+
+    button{
+        height: 6vh;
+        width: auto;
+        background-color: black;
+        padding-inline: 10%;
+        border-radius: 25px;
+
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            color: white;
+            gap: 0 7px;
+        }
+        svg{height: 3.5vh; width: auto;}
+    }
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{flex-grow: 1;}
